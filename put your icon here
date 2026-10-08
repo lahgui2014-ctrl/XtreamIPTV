@@ -1,0 +1,10 @@
+PLACEZ VOTRE ICÔNE PERSONNALISÉE ICI (Format PNG ou JPG)
+========================================================
+
+Pour que votre icône soit automatiquement utilisée par GitHub lors de la création de l'APK Android :
+
+1. Déposez simplement votre fichier image (.png ou .jpg, ex: "icon.png" ou "logo.jpg") directement dans ce dossier :
+   - soit ici à la racine de `appgen/`
+   - soit dans `appgen/app/src/main/res/drawable/`
+
+2. Vous n'avez même pas besoin de supprimer `ic_launcher.xml` : le workflow GitHub Actions détecte automatiquement toute image `.png` ou `.jpg` déposée dans `appgen/`, la convertit en `ic_launcher.png` officiel et remplace l'icône par défaut avant de compiler l'APK !
